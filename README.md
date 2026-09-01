@@ -1,7 +1,6 @@
 # Replication Package: Food Price Shocks and State Fragility
 
 Dalheimer, Bae, Foster, Balagtas (2026)  
-*Nature Food* — "The Geopolitics of Food" focus issue
 
 ---
 
