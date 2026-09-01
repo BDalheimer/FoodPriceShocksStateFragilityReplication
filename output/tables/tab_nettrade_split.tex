@@ -1,0 +1,54 @@
+% LP by income group x net food trade position: consumption shock
+
+\begin{table}[htbp]
+\centering
+\caption{Consumption shock LP by income group and net food trade position}
+\label{tab:nettrade-split}
+\begin{adjustbox}{max width=\textwidth}
+\begin{threeparttable}\small
+\begin{tabular}{l rr rr r}
+\toprule
+ & \multicolumn{2}{c}{$h = 1$} & \multicolumn{2}{c}{$h = 4$} & \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Sample & Est. & SE & Est. & SE & Countries \\
+\midrule
+\textit{Low income} \\
+\quad All & $-1.53$ & $(2.15)$ & $-14.97^{*}$ & $(6.82)$ & 17 \\
+ & & $(2.15)$ & & $(6.82)$ & \\
+\quad Net exporters & --- &  & --- &  & 0 \\
+ & &  & &  & \\
+\quad Net importers & $-1.53$ & $(2.15)$ & $-14.97^{*}$ & $(6.82)$ & 17 \\
+ & & $(2.15)$ & & $(6.82)$ & \\
+\addlinespace
+\textit{Lower-middle income} \\
+\quad All & $-1.30$ & $(1.82)$ & $-2.41$ & $(3.75)$ & 46 \\
+ & & $(1.82)$ & & $(3.75)$ & \\
+\quad Net exporters & $-0.32$ & $(2.76)$ & $-5.24$ & $(6.36)$ & 6 \\
+ & & $(2.76)$ & & $(6.36)$ & \\
+\quad Net importers & $-2.55$ & $(2.26)$ & $-2.85$ & $(4.58)$ & 39 \\
+ & & $(2.26)$ & & $(4.58)$ & \\
+\addlinespace
+\textit{Upper-middle income} \\
+\quad All & $+3.07$ & $(2.30)$ & $-4.81$ & $(4.90)$ & 46 \\
+ & & $(2.30)$ & & $(4.90)$ & \\
+\quad Net exporters & $+10.10$ & $(5.81)$ & $+8.77$ & $(9.35)$ & 9 \\
+ & & $(5.81)$ & & $(9.35)$ & \\
+\quad Net importers & $+0.43$ & $(2.02)$ & $-9.20$ & $(6.08)$ & 37 \\
+ & & $(2.02)$ & & $(6.08)$ & \\
+\addlinespace
+\textit{High income} \\
+\quad All & $+3.47$ & $(2.59)$ & $-19.27^{**}$ & $(6.57)$ & 53 \\
+ & & $(2.59)$ & & $(6.57)$ & \\
+\quad Net exporters & $+11.15^{*}$ & $(4.20)$ & $-13.23$ & $(11.94)$ & 18 \\
+ & & $(4.20)$ & & $(11.94)$ & \\
+\quad Net importers & $-1.63$ & $(2.69)$ & $-21.66^{*}$ & $(9.15)$ & 33 \\
+ & & $(2.69)$ & & $(9.15)$ & \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} LP: $\text{FSI}_{i,t+h} - \text{FSI}_{i,t-1} = \beta\,B^{\text{cons}}_{it} + \sum_{\ell=1}^{2}\gamma_\ell B^{\text{cons}}_{i,t-\ell} + \alpha_t + \varepsilon_{iht}$. Year FE; SE clustered by country. \textit{Net exporter} = median aggregate net-import share ($s^{\text{net}} = (\text{imports} - \text{exports})/\text{supply}$, summed over all commodities) negative over the first five sample years (predetermined). Country counts by group: Low income: 0/17 net exporters; Lower-middle income: 6/47 net exporters; Upper-middle income: 9/48 net exporters; High income: 18/56 net exporters. Key discriminating predictions: the \textit{relative deprivation} channel predicts net importers become \textit{more} fragile when prices rise (import costs compress consumer budgets); the \textit{opportunity cost} channel predicts net importers still \textit{stabilise} (smallholder producer income rises regardless of aggregate trade balance). $^{***}p<0.001$, $^{**}p<0.01$, $^{*}p<0.05$, $^{\cdot}p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{table}

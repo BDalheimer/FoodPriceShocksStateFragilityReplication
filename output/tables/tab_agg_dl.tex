@@ -1,0 +1,31 @@
+% Distributed lag IRFs: FSI outcome, five exposure types
+
+\begin{table}[htbp]
+\centering
+\caption{Distributed lag models: cumulative impulse responses (FSI outcome)}
+\label{tab:agg-dl}
+\begin{threeparttable}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+  & $h=0$ & $h=1$ & $h=2$ & $h=3$ & $h=4$ \\
+\midrule
+Consumption & 0.171 & -0.370 & -0.846 & -2.565 & -4.582* \\
+   & (0.828) & (0.978) & (1.362) & (1.762) & (2.182) \\[4pt]
+Production & 0.986* & -0.082 & 0.275 & 0.070 & -1.198 \\
+   & (0.456) & (0.541) & (0.748) & (0.918) & (1.168) \\[4pt]
+Imports & 0.565* & 0.550$\cdot$ & 0.299 & 0.348 & 0.400 \\
+   & (0.235) & (0.288) & (0.271) & (0.294) & (0.313) \\[4pt]
+Exports & -0.170 & 0.201 & 0.389 & 0.745* & 1.024* \\
+   & (0.372) & (0.198) & (0.270) & (0.318) & (0.463) \\[4pt]
+Net imports & 0.369 & 0.089 & -0.180 & -0.376 & -0.514 \\
+   & (0.360) & (0.172) & (0.210) & (0.263) & (0.381) \\[4pt]
+\midrule
+$N$ & 2,222 & 2,222 & 2,222 & 2,222 & 2,222 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} Distributed lag specification: $\Delta\text{FSI}_{i,t} = \alpha_t + \sum_{k=0}^{H}\beta_k\,x_{i,t-k} + \varepsilon_{it}$. Entries are cumulative multipliers $B_h = \sum_{k=0}^{h}\beta_k$ with delta-method standard errors in parentheses (using the full clustered variance-covariance matrix). Year fixed effects; standard errors clustered by country. $N$ is the same across all horizons (single regression per row). Significance: $***$ $p<0.001$, $**$ $p<0.01$, $*$ $p<0.05$, $\cdot$ $p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

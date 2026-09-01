@@ -1,0 +1,31 @@
+% Within-LIC net-trade split: consumption LP
+
+\begin{table}[htbp]
+\centering
+\caption{Consumption shock LP: within-LIC split by net food trade position}
+\label{tab:lic-nettrade}
+\begin{adjustbox}{max width=\textwidth}
+\begin{threeparttable}\small
+\begin{tabular}{l r rrrr}
+\toprule
+Sample & $h$ & Estimate & SE & $p$-value & $N$ (countries) \\
+\midrule
+LIC net exporters & 1 & \multicolumn{4}{c}{---} \\
+ & 4 & \multicolumn{4}{c}{---} \\
+\addlinespace
+LIC net importers & 1 & $-1.53$ & $(2.15)$ & 0.486 & 267 (17) \\
+ & 4 & $-14.97^{*}$ & $(6.82)$ & 0.043 & 219 (17) \\
+\addlinespace
+All LICs & 1 & $-1.53$ & $(2.15)$ & 0.486 & 267 (17) \\
+ & 4 & $-14.97^{*}$ & $(6.82)$ & 0.043 & 219 (17) \\
+\addlinespace
+LMICs (ref) & 1 & $-1.23$ & $(1.40)$ & 0.384 & 979 (63) \\
+ & 4 & $-5.41$ & $(3.51)$ & 0.128 & 794 (63) \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} LP specification: $\text{FSI}_{i,t+h} - \text{FSI}_{i,t-1} = \beta\,B^{\text{cons}}_{it} + \sum_{\ell=1}^{2}\gamma_\ell B^{\text{cons}}_{i,t-\ell} + \alpha_t + \varepsilon_{iht}$. Year fixed effects; standard errors clustered by country. Net trade classification is predetermined: a country is classified as a \textit{net food exporter} if its median aggregate net-import share ($s^{\text{net}}$, see text) over the first five sample years is negative. Among low-income countries, 0 are net food exporters and 17 are net food importers (total: 17). The \textit{LMICs (ref)} row pools low- and lower-middle-income countries for reference. If the stabilising effect concentrates in net-exporter LICs, this would support an export-revenue explanation; persistence in net-importer LICs supports the household farm-income channel. $^{***}p<0.001$, $^{**}p<0.01$, $^{*}p<0.05$, $^{\cdot}p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{table}

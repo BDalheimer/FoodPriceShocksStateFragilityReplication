@@ -1,0 +1,44 @@
+\begin{table}[htbp]
+\centering
+\caption{Pre-trend tests: LP coefficients at placebo horizons $h = -2$ and $h = -3$}
+\label{tab:pretrend}
+\begin{threeparttable}
+\small
+\begin{tabular}{p{5.2cm} rr rr l}
+\toprule
+ & \multicolumn{2}{c}{$h = -2$} & \multicolumn{2}{c}{$h = -3$} & \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Model & Est. & (SE) & Est. & (SE) & Verdict \\
+\midrule
+\multicolumn{6}{l}{\textit{A. Aggregate, five exposure types}} \\
+\quad Consumption & -0.462 & (0.730) & -1.258 & (0.883) & \checkmark \\
+\quad Production & 0.305 & (0.439) & -1.291$^{\dagger}$ & (0.676) & Attenuating$^{\ddagger}$ \\
+\quad Import & -0.231 & (0.145) & 0.002 & (0.321) & \checkmark \\
+\quad Export & -0.183 & (0.114) & -0.068 & (0.223) & \checkmark \\
+\quad Net import & 0.056 & (0.102) & 0.080 & (0.210) & \checkmark \\
+\addlinespace
+\multicolumn{6}{l}{\textit{B. Consumption shock by income group}} \\
+\quad Low income & 0.449 & (2.148) & -0.851 & (2.869) & \checkmark \\
+\quad Lower-middle & -0.801 & (0.970) & -2.033 & (1.231) & \checkmark \\
+\quad Upper-middle & 0.964 & (1.639) & -1.588 & (1.767) & \checkmark \\
+\quad High income & -1.563 & (1.557) & -2.986 & (2.486) & \checkmark \\
+\addlinespace
+\multicolumn{6}{l}{\textit{C. Commodity group shocks, aggregate}} \\
+\quad Cereals & -0.078 & (0.795) & -0.845 & (1.004) & \checkmark \\
+\quad Oils & -3.736* & (1.716) & -3.563 & (2.686) & Concern$^{\S}$ \\
+\quad Animal products & 8.576$^{\dagger}$ & (4.423) & 11.359 & (9.239) & Attenuating$^{\ddagger}$ \\
+\quad Sugar \& fruit & --- & --- & --- & --- & --- \\
+\quad Bev. crops & --- & --- & --- & --- & --- \\
+\addlinespace
+\multicolumn{6}{l}{\textit{D. Animal consumption shock by income group}} \\
+\quad Low income & --- & --- & --- & --- & --- \\
+\quad Lower-middle & 7.549 & (8.040) & 26.722$^{\dagger}$ & (14.477) & Attenuating$^{\ddagger}$ \\
+\quad Upper-middle & -4.333 & (6.790) & -5.849 & (11.835) & \checkmark \\
+\quad High income & -12.179 & (7.443) & -30.650 & (18.623) & \checkmark \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} Each cell reports the LP coefficient from regressing $\text{FSI}_{i,t+h} - \text{FSI}_{i,t-1}$ on the relevant shock at placebo horizons $h \in \{-2,-3\}$, with year fixed effects and two shock lags. Standard errors clustered by country. \checkmark~Pass: $p \geq 0.10$ at both horizons. Attenuating$^{\ddagger}$: significant pre-trend but opposite sign to the main effect at $h=4$ (conservative bias, not inflation). Concern$^{\S}$: significant pre-trend same sign as main effect. --- : near-zero shock variance. $^{**}p<0.01$, $^{*}p<0.05$, $^{\dagger}p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

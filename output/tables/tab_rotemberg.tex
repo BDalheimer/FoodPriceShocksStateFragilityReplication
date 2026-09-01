@@ -1,0 +1,36 @@
+% Rotemberg weight decomposition of consumption LP — GPS (2020)
+
+\begin{table}[htbp]
+\centering
+\caption{Rotemberg weight decomposition of the consumption shock (GPS 2020)}
+\label{tab:rotemberg}
+\begin{adjustbox}{max width=\textwidth}
+\begin{threeparttable}\small
+\begin{tabular}{l rr@{\quad}rr}
+\toprule
+ & \multicolumn{2}{c}{$h=1$} & \multicolumn{2}{c}{$h=4$} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Commodity group & $\hat{\alpha}_g$ & $\hat{\beta}_g^{\text{IV}}$ & $\hat{\alpha}_g$ & $\hat{\beta}_g^{\text{IV}}$ \\
+\midrule
+Cereals & $+0.926$ & $-0.264$ & $+0.964$ & $-1.931$ \\
+   & & $(1.135)$ & & $(2.691)$ \\[4pt]
+Oilseeds \& oils & $+0.070$ & $+22.845$** & $+0.053$ & $-24.021$ \\
+   & & $(7.211)$ & & $(17.407)$ \\[4pt]
+Animal products & $+0.006$ & $-2.252$ & $-0.011$ & $+36.418$ \\
+   & & $(26.013)$ & & $(41.874)$ \\[4pt]
+Sugar \& fruit & $-0.001$ & $-11.300$ & $-0.004$ & $+18.632$$\cdot$ \\
+   & & $(19.534)$ & & $(9.965)$ \\[4pt]
+Cash crops & $-0.000$ & $+137.540$ & $-0.001$ & $+585.948$ \\
+   & & $(216.564)$ & & $(738.409)$ \\[4pt]
+\midrule
+\textit{OLS baseline (weighted sum)} & $1.000$ & $+1.305$ & $1.000$ & $-4.041$ \\
+\midrule
+$N$ & \multicolumn{2}{c}{2,517} & \multicolumn{2}{c}{2,039} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} Rotemberg weight decomposition following \citet{GoldsmithPinkham2020}. The aggregate consumption shock $B_{it} = \sum_g B_{igt}$ is decomposed into five commodity-group components. $\hat{\alpha}_g = \widetilde{\text{Cov}}(B_g, B) / \widetilde{\text{Var}}(B)$ is the Rotemberg weight, measuring group $g$'s contribution to aggregate shock variation after partialing out year fixed effects and two shock lags. Weights sum to one; a negative weight indicates the group's shock variation is negatively correlated with the aggregate after conditioning. $\hat{\beta}_g^{\text{IV}}$ is the just-identified IV coefficient from using only $B_{igt}$ as the instrument for $B_{it}$ in the LP; standard errors clustered by country in parentheses. The OLS baseline equals $\sum_g \hat{\alpha}_g \hat{\beta}_g^{\text{IV}}$ by construction. $^{***}p<0.001$, $^{**}p<0.01$, $^{*}p<0.05$, $^{\cdot}p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{table}

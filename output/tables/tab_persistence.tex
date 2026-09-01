@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\caption{Shock persistence decomposition: persistent vs transitory LP}
+\label{tab:persistence}
+\begin{threeparttable}\small
+\begin{tabular}{lrrrrr}
+\toprule
+Component & $h=0$ & $h=1$ & $h=2$ & $h=3$ & $h=4$ \\
+\midrule
+\textit{Consumption exposure} \\
+\quad Persistent (3-yr MA) & $+0.570$ & $+3.756$ & $-7.917*$ & $-10.019*$ & $-22.205***$ \\
+& $(2.075)$ & $(2.349)$ & $(3.076)$ & $(4.208)$ & $(4.678)$ \\
+& \multicolumn{5}{l}{$N = 2381$} \\[2pt]
+\quad Transitory (deviation) & $-0.163$ & $-1.420$ & $+1.747$ & $-8.050***$ & $-5.093*$ \\
+& $(1.048)$ & $(1.347)$ & $(1.475)$ & $(1.917)$ & $(2.089)$ \\
+& \multicolumn{5}{l}{$N = 2381$} \\[2pt]
+\textit{Production exposure} \\
+\quad Persistent (3-yr MA) & $+0.422$ & $+2.569$\cdot$$ & $-4.449*$ & $-2.129$ & $-7.427**$ \\
+& $(1.190)$ & $(1.412)$ & $(1.769)$ & $(2.071)$ & $(2.386)$ \\
+& \multicolumn{5}{l}{$N = 2381$} \\[2pt]
+\quad Transitory (deviation) & $+0.413$ & $-2.275**$ & $-0.306$ & $-3.232*$ & $-1.840$ \\
+& $(0.760)$ & $(0.842)$ & $(0.864)$ & $(1.280)$ & $(1.229)$ \\
+& \multicolumn{5}{l}{$N = 2381$} \\[2pt]
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} The persistent component is the 3-year backward moving average of the Bartik shock, $\bar{x}_{it} = (x_{it} + x_{i,t-1} + x_{i,t-2})/3$. The transitory component is the deviation $x_{it} - \bar{x}_{it}$. Both enter jointly with two lags each. Year FE; SE clustered by country. $^{***}p<0.001$, $^{**}p<0.01$, $^{*}p<0.05$, $^{\cdot}p<0.10$.
+\end{tablenotes}\end{threeparttable}\end{table}

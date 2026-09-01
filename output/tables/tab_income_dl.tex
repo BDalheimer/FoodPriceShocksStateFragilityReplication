@@ -1,0 +1,33 @@
+% Distributed lag IRFs by income group: all exposure types, h=1 and h=4
+
+\begin{table}[htbp]
+\centering
+\caption{Distributed lag models by income group (FSI outcome)}
+\label{tab:income-dl}
+\begin{threeparttable}
+\small
+\begin{tabular}{l rr rr rr rr}
+\toprule
+ & \multicolumn{2}{c}{Low} & \multicolumn{2}{c}{Lower-middle} & \multicolumn{2}{c}{Upper-middle} & \multicolumn{2}{c}{High} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+ & $h=1$ & $h=4$ & $h=1$ & $h=4$ & $h=1$ & $h=4$ & $h=1$ & $h=4$ \\
+\midrule
+Consumption & -1.313 & -6.499 & -2.380 & -9.028* & 0.780 & -1.807 & 4.168 & -1.437 \\
+   & (1.887) & (5.720) & (1.863) & (3.803) & (1.704) & (5.043) & (2.568) & (6.330) \\[4pt]
+Production & 0.286 & 0.084 & -1.737 & -4.640$\cdot$ & -1.266 & -2.725 & 2.350** & 2.803$\cdot$ \\
+   & (1.809) & (3.340) & (1.183) & (2.578) & (0.873) & (2.423) & (0.763) & (1.578) \\[4pt]
+Imports & -3.374 & -2.688 & -0.639 & -1.013 & 0.509 & 0.059 & 0.226 & 0.199 \\
+   & (2.554) & (3.814) & (0.911) & (1.170) & (0.560) & (1.442) & (0.372) & (0.313) \\[4pt]
+Exports & -3.945 & -22.627 & -0.803 & -2.783 & -0.367 & 1.495 & 0.044 & 0.383 \\
+   & (9.823) & (14.783) & (3.272) & (5.438) & (0.326) & (1.170) & (0.191) & (0.316) \\[4pt]
+Net imports & -2.314 & -0.955 & -0.495 & -0.463 & 0.316 & -0.899 & 0.086 & -0.119 \\
+   & (2.840) & (4.095) & (0.723) & (0.953) & (0.259) & (0.842) & (0.191) & (0.274) \\[4pt]
+\midrule
+$N$ & 233 & 233 & 631 & 631 & 640 & 640 & 704 & 704 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} Distributed lag specification: $\Delta\text{FSI}_{i,t} = \alpha_t + \sum_{k=0}^{H}\beta_k\,x_{i,t-k} + \varepsilon_{it}$. Entries are cumulative multipliers $B_h = \sum_{k=0}^{h}\beta_k$ with delta-method standard errors in parentheses. Samples split by World Bank income classification (2010, fixed). Year fixed effects; standard errors clustered by country. $N$ is the same across both horizon columns (single regression per cell). Significance: $***$ $p<0.001$, $**$ $p<0.01$, $*$ $p<0.05$, $\cdot$ $p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

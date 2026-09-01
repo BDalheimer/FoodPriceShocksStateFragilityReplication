@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering
+\caption{Fiscal channel robustness: LP on WDI fiscal indicators}
+\label{tab:fiscal-lp}
+\begin{adjustbox}{max width=\textwidth}
+\begin{threeparttable}\small
+\begin{tabular}{lrrrr}
+\toprule
+ & \multicolumn{2}{c}{Consumption} & \multicolumn{2}{c}{Production} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Fiscal outcome & $h=1$ & $h=4$ & $h=1$ & $h=4$ \\
+\midrule
+Revenue excl. grants (\% GDP) & $+3.278$ & $+10.296$ & $-0.467$ & $+1.388$ \\
+& $(2.807)$ & $(7.643)$ & $(2.050)$ & $(2.020)$ \\
+& \multicolumn{4}{l}{\footnotesize $N = 1,976$} \\[4pt]
+Govt expenditure (\% GDP) & $-3.495$\cdot$$ & $+0.237$ & $-0.012$ & $+3.180$\cdot$$ \\
+& $(1.959)$ & $(2.974)$ & $(1.270)$ & $(1.784)$ \\
+& \multicolumn{4}{l}{\footnotesize $N = 1,911$} \\[4pt]
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} Each row runs the baseline LP ($\Delta_h Y_{it} = Y_{i,t+h} - Y_{i,t-1}$) with a WDI fiscal indicator as the outcome in place of FSI. Specification: year FE, two lags of the shock, SE clustered by country. A null result across outcomes indicates that food price shocks do not operate through an aggregate fiscal channel. Data: World Bank WDI. $^{***}p<0.001$, $^{**}p<0.01$, $^{*}p<0.05$, $^{\cdot}p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{table}

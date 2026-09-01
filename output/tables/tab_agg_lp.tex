@@ -1,0 +1,31 @@
+% Aggregate LP: FSI outcome, five exposure types
+
+\begin{table}[htbp]
+\centering
+\caption{Aggregate local projections: all five exposure measures (FSI outcome)}
+\label{tab:agg-lp}
+\begin{threeparttable}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+  & $h=0$ & $h=1$ & $h=2$ & $h=3$ & $h=4$ \\
+\midrule
+Consumption & 0.624 & 1.305 & 0.390 & -2.239 & -4.041$\cdot$ \\
+   & (0.708) & (1.033) & (1.342) & (1.882) & (2.212) \\[4pt]
+Production & 0.539 & 0.356 & -0.032 & -0.137 & -1.413 \\
+   & (0.394) & (0.495) & (0.714) & (0.878) & (1.124) \\[4pt]
+Imports & 0.366* & 0.523 & 0.217 & 0.134 & 0.708$\cdot$ \\
+   & (0.144) & (0.344) & (0.378) & (0.331) & (0.372) \\[4pt]
+Exports & 0.026 & 0.577** & 0.617 & -0.127 & -0.086 \\
+   & (0.240) & (0.178) & (0.445) & (0.255) & (0.350) \\[4pt]
+Net imports & 0.147 & -0.146 & -0.315 & 0.153 & 0.462 \\
+   & (0.221) & (0.166) & (0.346) & (0.210) & (0.327) \\[4pt]
+\midrule
+$N$ (consumption) & 2,678 & 2,517 & 2,356 & 2,196 & 2,039 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} LP: $\text{FSI}_{i,t+h} - \text{FSI}_{i,t-1} = \beta\, x_{it} + \sum_{\ell=1}^{2}\gamma_\ell x_{i,t-\ell} + \alpha_t + \varepsilon_{iht}$. Year fixed effects; standard errors clustered by country. Significance: $***$ $p<0.001$, $**$ $p<0.01$, $*$ $p<0.05$, $\cdot$ $p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

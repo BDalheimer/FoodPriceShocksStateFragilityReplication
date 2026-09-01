@@ -1,0 +1,84 @@
+% Rotemberg weight decomposition — individual commodity level
+
+\begin{table}[htbp]
+\centering
+\caption{Rotemberg weight decomposition by individual commodity (GPS 2020)}
+\label{tab:rotemberg-commodity}
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.92\textheight}
+\begin{threeparttable}\small
+\begin{tabular}{l rr@{\quad}rr}
+\toprule
+ & \multicolumn{2}{c}{$h=1$} & \multicolumn{2}{c}{$h=4$} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Commodity & $\hat{\alpha}_c$ & $\hat{\beta}_c^{\text{IV}}$ & $\hat{\alpha}_c$ & $\hat{\beta}_c^{\text{IV}}$ \\
+\midrule
+\multicolumn{5}{l}{\textit{Cereals}} \\
+\midrule
+\quad Rice & $+0.4588$ & $-2.086$ & $+0.6291$ & $+1.230$ \\
+   & & $(2.360)$ & & $(4.704)$ \\[2pt]
+\quad Maize & $+0.3049$ & $-5.185$$\cdot$ & $+0.3416$ & $-10.699$* \\
+   & & $(2.910)$ & & $(5.365)$ \\[2pt]
+\quad Sorghum & $+0.0058$ & $+7.575$ & $+0.0064$ & $+6.968$ \\
+   & & $(10.247)$ & & $(14.595)$ \\[2pt]
+\quad Barley & $+0.0012$ & $-99.783$ & $-0.0000$ & $+1943.849$ \\
+   & & $(236.832)$ & & $(121637.928)$ \\[2pt]
+\quad Wheat & $+0.1590$ & $+14.659$* & $-0.0126$ & $-84.644$ \\
+   & & $(6.642)$ & & $(206.891)$ \\[2pt]
+\addlinespace
+\multicolumn{5}{l}{\textit{Oils}} \\
+\midrule
+\quad Palm oil & $+0.0506$ & $+12.140$* & $+0.0350$ & $-71.009$** \\
+   & & $(5.907)$ & & $(25.246)$ \\[2pt]
+\quad Groundnut oil & $+0.0103$ & $+14.761$ & $+0.0240$ & $+45.405$*** \\
+   & & $(12.101)$ & & $(13.488)$ \\[2pt]
+\quad Coconut oil & $+0.0016$ & $-15.286$ & $+0.0116$ & $+7.521$ \\
+   & & $(35.679)$ & & $(15.851)$ \\[2pt]
+\quad Soybeans & $+0.0007$ & $-148.992$ & $+0.0037$ & $-37.094$ \\
+   & & $(253.444)$ & & $(24.256)$ \\[2pt]
+\quad Rapeseed oil & $-0.0017$ & $+55.544$ & $+0.0033$ & $-2.712$ \\
+   & & $(43.764)$ & & $(18.935)$ \\[2pt]
+\quad Sunflower oil & $+0.0087$ & $+92.745$ & $-0.0058$ & $-113.676$ \\
+   & & $(62.045)$ & & $(118.157)$ \\[2pt]
+\quad Soybean oil & $+0.0045$ & $+45.174$ & $-0.0125$ & $+61.950$ \\
+   & & $(98.560)$ & & $(53.187)$ \\[2pt]
+\addlinespace
+\multicolumn{5}{l}{\textit{Sugar \& fruit}} \\
+\midrule
+\quad Sugar & $+0.0000$ & $-24.795$ & $+0.0000$ & $-42.677$ \\
+   & & $(37.984)$ & & $(57.310)$ \\[2pt]
+\quad Oranges & $-0.0001$ & $-15.606$ & $-0.0005$ & $+65.984$ \\
+   & & $(69.336)$ & & $(43.528)$ \\[2pt]
+\quad Bananas & $-0.0008$ & $-11.730$ & $-0.0036$ & $+11.994$ \\
+   & & $(18.970)$ & & $(10.819)$ \\[2pt]
+\addlinespace
+\multicolumn{5}{l}{\textit{Animal}} \\
+\midrule
+\quad Shrimp & $-0.0003$ & $-35.946$ & $-0.0004$ & $+20.883$ \\
+   & & $(22.490)$ & & $(29.413)$ \\[2pt]
+\quad Lamb & $+0.0001$ & $+2378.684$ & $-0.0017$ & $-219.807$ \\
+   & & $(68817.645)$ & & $(233.812)$ \\[2pt]
+\quad Chicken & $+0.0053$ & $-39.717$* & $-0.0037$ & $+138.429$** \\
+   & & $(19.465)$ & & $(50.613)$ \\[2pt]
+\quad Beef & $+0.0012$ & $+38.579$ & $-0.0053$ & $+47.361$ \\
+   & & $(98.805)$ & & $(70.461)$ \\[2pt]
+\addlinespace
+\multicolumn{5}{l}{\textit{Cash crops}} \\
+\midrule
+\quad Tea & $+0.0000$ & $+1820.049$ & $+0.0000$ & $+1516.516$ \\
+   & & $(42521.506)$ & & $(38185.435)$ \\[2pt]
+\quad Coffee & $+0.0002$ & $+118.336$ & $-0.0001$ & $+206.158$ \\
+   & & $(125.326)$ & & $(576.751)$ \\[2pt]
+\quad Cocoa & $-0.0007$ & $+133.736$ & $-0.0008$ & $+616.334$ \\
+   & & $(145.923)$ & & $(820.400)$ \\[2pt]
+\midrule
+\textit{OLS baseline (weighted sum)} & $1.000$ & $+1.305$ & $1.000$ & $-4.041$ \\
+\midrule
+$N$ & \multicolumn{2}{c}{2,523} & \multicolumn{2}{c}{2,042} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} Rotemberg weight decomposition following \citet{GoldsmithPinkham2020} at the individual commodity level. The aggregate consumption shock $B_{it} = \sum_c s_{ic,t}\,\Delta\log p_{c,t}$ is decomposed into 22 individual commodity components. $\hat{\alpha}_c$ = Rotemberg weight; $\hat{\beta}_c^{\text{IV}}$ = just-identified IV coefficient using only commodity $c$'s shock as the instrument for the aggregate. Year FE; SE clustered by country in parentheses. Commodities sorted by descending $\hat{\alpha}_c$ within each group at $h=4$. $^{***}p<0.001$, $^{**}p<0.01$, $^{*}p<0.05$, $^{\cdot}p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{table}

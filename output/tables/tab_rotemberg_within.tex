@@ -1,0 +1,29 @@
+% Within-group Rotemberg weight decomposition
+
+\begin{table}[htbp]
+\centering
+\caption{Within-group Rotemberg weight concentration by commodity group}
+\label{tab:rotemberg-within}
+\begin{adjustbox}{max width=\textwidth}
+\begin{threeparttable}\small
+\begin{tabular}{l cc cc lc}
+\toprule
+ & \multicolumn{2}{c}{$h = 1$} & \multicolumn{2}{c}{$h = 4$} & \multicolumn{2}{c}{Dominant commodity ($h=4$)} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}
+Group & HHI & Eff.\ $N$ & HHI & Eff.\ $N$ & Commodity & $\hat{\alpha}$ \\
+\midrule
+Cereals & 0.511 & 1.96 & 0.609 & 1.64 & Maize & $+0.765$ \\
+Oils & 0.348 & 2.87 & 0.412 & 2.43 & Palm oil & $+0.547$ \\
+Animal products & 0.336 & 2.98 & 0.334 & 3.00 & Beef & $+0.387$ \\
+Sugar \& fruit & 0.573 & 1.75 & 0.537 & 1.86 & Bananas & $+0.638$ \\
+Beverage crops & 0.849 & 1.18 & 0.871 & 1.15 & Cocoa & $+0.931$ \\
+\midrule
+\textit{Aggregate model} & \multicolumn{2}{c}{---} & 0.933 & 1.07 & Cereals & ---  \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} Within-group Rotemberg weight decomposition following \citet{goldsmith2020bartik}. For each group-specific local projection (outcome: $\Delta$FSI; regressor: group consumption shock $B^g_{it}$), the within-group weight $\hat{\alpha}_c^g = \text{Cov}(\tilde{B}_c, \tilde{B}_g) / \text{Var}(\tilde{B}_g)$ measures the contribution of commodity $c$ to identification within group $g$. Residualisation ($\tilde{\cdot}$) removes year fixed effects and two lags of the group shock. HHI $= \sum_c (\hat{\alpha}_c^g)^2$; effective $N = 1/$HHI. The bottom row reproduces the aggregate-model HHI for reference. Effective $N > 1$ indicates identification is not fully concentrated in a single commodity.
+\end{tablenotes}
+\end{threeparttable}
+\end{adjustbox}
+\end{table}

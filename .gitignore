@@ -1,0 +1,14 @@
+# Raw FAO Food Balance Sheet files are too large for GitHub (>100MB each).
+# Not required to reproduce paper figures/tables — see README.md quick start,
+# which uses the pre-built data/processed/*.rds files instead.
+# Original source: FAOSTAT Food Balance Sheets (New & Historic norm. bulk downloads),
+# https://www.fao.org/faostat/en/#data/FBS and .../FBSH
+data/raw/fao/FoodBalanceSheets_E_All_Data_(Normalized).csv
+data/raw/fao/Historic/FoodBalanceSheetsHistoric_E_All_Data_(Normalized).csv
+
+# LibreOffice/editor lock files
+.~lock.*#
+
+# R session files
+.Rhistory
+.Rproj.user/

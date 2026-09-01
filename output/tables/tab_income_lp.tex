@@ -1,0 +1,33 @@
+% Income group LP: all exposure types, h=1 and h=4
+
+\begin{table}[htbp]
+\centering
+\caption{Local projections by income group (FSI outcome)}
+\label{tab:income-lp}
+\begin{threeparttable}
+\small
+\begin{tabular}{l rr rr rr rr}
+\toprule
+ & \multicolumn{2}{c}{Low} & \multicolumn{2}{c}{Lower-middle} & \multicolumn{2}{c}{Upper-middle} & \multicolumn{2}{c}{High} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+ & $h=1$ & $h=4$ & $h=1$ & $h=4$ & $h=1$ & $h=4$ & $h=1$ & $h=4$ \\
+\midrule
+Consumption & -1.620 & -7.389 & -1.565 & -0.609 & 2.971 & -1.059 & 2.066 & -13.576* \\
+   & (2.160) & (4.474) & (1.798) & (3.104) & (2.381) & (3.867) & (2.685) & (5.500) \\[4pt]
+Production & 0.319 & -4.406 & -0.653 & 1.658 & -1.212 & -4.282** & 1.402* & -1.324 \\
+   & (1.748) & (4.030) & (1.104) & (1.713) & (0.842) & (1.465) & (0.693) & (1.654) \\[4pt]
+Imports & -3.636 & 0.038 & -1.296 & -0.704 & 0.157 & 1.894$\cdot$ & 0.320 & 1.009* \\
+   & (2.919) & (2.841) & (1.019) & (1.900) & (0.454) & (1.100) & (0.402) & (0.421) \\[4pt]
+Exports & 6.060 & -6.552 & -2.363 & -1.596 & 0.272* & 0.150 & 0.397$\cdot$ & -0.122 \\
+   & (11.218) & (21.170) & (3.776) & (4.660) & (0.134) & (0.548) & (0.211) & (0.493) \\[4pt]
+Net imports & -3.638 & -0.366 & -0.972 & -0.293 & -0.158 & 0.230 & -0.070 & 0.633 \\
+   & (2.727) & (2.551) & (0.826) & (1.831) & (0.139) & (0.565) & (0.214) & (0.391) \\[4pt]
+\midrule
+$N$ & 267 & 219 & 712 & 575 & 727 & 592 & 794 & 640 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} LP: $\text{FSI}_{i,t+h} - \text{FSI}_{i,t-1} = \beta\, x_{it} + \sum_{\ell=1}^{2}\gamma_\ell x_{i,t-\ell} + \alpha_t + \varepsilon_{iht}$. Samples split by World Bank income classification (2010, fixed). Year fixed effects; standard errors clustered by country. $N$ from consumption exposure; other exposures may differ slightly. Significance: $***$ $p<0.001$, $**$ $p<0.01$, $*$ $p<0.05$, $\cdot$ $p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

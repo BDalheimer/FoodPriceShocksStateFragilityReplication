@@ -1,0 +1,33 @@
+% Commodity group LP: all exposure types, h=1 and h=4
+
+\begin{table}[htbp]
+\centering
+\caption{Local projections by commodity group (aggregate sample)}
+\label{tab:group-lp-agg}
+\begin{threeparttable}
+\small
+\begin{tabular}{l rr rr rr rr rr}
+\toprule
+ & \multicolumn{2}{c}{Consumption} & \multicolumn{2}{c}{Production} & \multicolumn{2}{c}{Imports} & \multicolumn{2}{c}{Exports} & \multicolumn{2}{c}{Net imports} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9} \cmidrule(lr){10-11}
+Commodity group & $h=1$ & $h=4$ & $h=1$ & $h=4$ & $h=1$ & $h=4$ & $h=1$ & $h=4$ & $h=1$ & $h=4$ \\
+\midrule
+Cereals & -0.136 & 0.968 & 0.056 & -0.360 & 0.490 & 0.979** & 0.814*** & 0.000 & -0.287 & 0.529 \\
+   & (0.978) & (1.761) & (0.539) & (0.923) & (0.336) & (0.364) & (0.201) & (0.434) & (0.205) & (0.350) \\[4pt]
+Oils & 6.810** & -12.628** & -0.209 & -3.319 & 2.979 & 2.577 & 0.538 & -0.689 & -0.051 & 1.154 \\
+   & (2.347) & (4.831) & (1.077) & (3.467) & (2.423) & (2.428) & (0.379) & (1.192) & (0.345) & (1.453) \\[4pt]
+Animal products & -12.808$\cdot$ & -37.814** & 0.346 & 2.360 & -4.692 & -17.048* & 3.716 & -2.587 & -5.671** & -3.681 \\
+   & (6.992) & (12.930) & (1.607) & (4.225) & (3.566) & (7.032) & (2.714) & (4.445) & (2.016) & (2.991) \\[4pt]
+Sugar \& fruit & 15.667 & -252.857$\cdot$ & 1.219 & -3.879 & 3.292 & -10.988* & 9.943$\cdot$ & -1.469 & -1.778 & -6.877 \\
+   & (86.452) & (144.803) & (1.975) & (2.977) & (2.739) & (4.553) & (5.895) & (10.472) & (4.090) & (5.426) \\[4pt]
+Beverage crops & 3.792 & -51.681* & -7.634** & -5.836$\cdot$ & 18.438** & -2.532 & 2.535 & -1.953 & 16.316*** & -1.238 \\
+   & (14.634) & (23.103) & (2.826) & (3.046) & (6.199) & (8.143) & (6.846) & (6.930) & (4.709) & (7.942) \\[4pt]
+\midrule
+$N$ & 2,516 & 2,039 & 2,516 & 2,039 & 2,516 & 2,039 & 2,516 & 2,039 & 2,516 & 2,039 \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} Each cell reports the LP coefficient from $\text{FSI}_{i,t+h} - \text{FSI}_{i,t-1} = \beta x^g_{it} + \sum_{\ell=1}^{2}\gamma_\ell x^g_{i,t-\ell} + \alpha_i + \alpha_t + \varepsilon_{iht}$, where $x^g_{it}$ is the commodity-group Bartik shock for group $g$. Country and year fixed effects; SE clustered by country. $N$ from cereals group (other groups similar). $^{***}p<0.001$, $^{**}p<0.01$, $^{*}p<0.05$, $^{\cdot}p<0.10$.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

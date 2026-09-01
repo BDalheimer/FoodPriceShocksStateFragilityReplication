@@ -1,0 +1,39 @@
+\begin{table}[htbp]
+\centering
+\caption{Leave-one-out influence: top countries by $|\Delta\hat\beta|$ at $h=4$}
+\label{tab:loo-influence}
+\begin{threeparttable}\small
+\begin{tabular}{l rrrll}
+\toprule
+Country & Baseline & LOO & $\Delta$ & Sign flip & Significance \\
+\midrule
+\multicolumn{6}{l}{\textit{Consumption exposure}} \\
+\midrule
+LBY & $-4.041$\cdot$$ & $-3.274$ & $+0.767$ & no & lost \\
+MDG & $-4.041$\cdot$$ & $-4.569*$ & $-0.528$ & no & both \\
+YEM & $-4.041$\cdot$$ & $-3.566$ & $+0.475$ & no & lost \\
+SYR & $-4.041$\cdot$$ & $-3.584$ & $+0.457$ & no & lost \\
+TKM & $-4.041$\cdot$$ & $-4.454*$ & $-0.413$ & no & both \\
+TUN & $-4.041$\cdot$$ & $-3.642$ & $+0.399$ & no & lost \\
+CHL & $-4.041$\cdot$$ & $-3.654$\cdot$$ & $+0.388$ & no & both \\
+ZWE & $-4.041$\cdot$$ & $-3.661$\cdot$$ & $+0.380$ & no & both \\
+SLB & $-4.041$\cdot$$ & $-3.681$\cdot$$ & $+0.360$ & no & both \\
+ISL & $-4.041$\cdot$$ & $-3.685$\cdot$$ & $+0.356$ & no & both \\
+\midrule
+\multicolumn{6}{l}{\textit{Production exposure}} \\
+\midrule
+LBY & $-1.413$ & $-1.060$ & $+0.353$ & no & neither \\
+ISL & $-1.413$ & $-1.102$ & $+0.311$ & no & neither \\
+ATG & $-1.413$ & $-1.679$ & $-0.266$ & no & neither \\
+SYR & $-1.413$ & $-1.183$ & $+0.230$ & no & neither \\
+BRB & $-1.413$ & $-1.633$ & $-0.220$ & no & neither \\
+BHS & $-1.413$ & $-1.629$ & $-0.216$ & no & neither \\
+MUS & $-1.413$ & $-1.199$ & $+0.214$ & no & neither \\
+MDV & $-1.413$ & $-1.596$ & $-0.183$ & no & neither \\
+DJI & $-1.413$ & $-1.595$ & $-0.182$ & no & neither \\
+BEL & $-1.413$ & $-1.243$ & $+0.170$ & no & neither \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\small
+\item \textit{Notes:} Each row reports the baseline $h=4$ LP coefficient, the coefficient when the indicated country is excluded, and the difference $\Delta = \hat\beta_{\text{LOO}} - \hat\beta_{\text{full}}$. ``Sign flip'': exclusion reverses the sign of the estimate. ``Significance'' reports whether the 10\% significance status changes (both / lost / gained / neither). Year FE; SE clustered by country. $^{***}p<0.001$, $^{**}p<0.01$, $^{*}p<0.05$, $^{\cdot}p<0.10$.
+\end{tablenotes}\end{threeparttable}\end{table}
